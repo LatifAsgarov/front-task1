@@ -1,0 +1,887 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Aspira Webfont", Helvetica, Arial, sans-serif;
+  word-spacing: 3px;
+}
+
+nav {
+  padding: 20px 45px;
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fffdfd;
+  z-index: 1;
+}
+
+#chegg-logo {
+  color: rgb(235, 113, 0);
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.top-link {
+  float: left;
+  padding: 0 64px;
+}
+
+.links1 {
+  float: left;
+  margin: 0 15px;
+}
+
+.top-link a {
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.general-link a {
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.general-link #bordered-link {
+  padding: 0 15px;
+  border-left: 1px solid rgb(146, 146, 146);
+  border-right: 1px solid rgb(146, 146, 146);
+
+}
+
+.dropdown-book {
+  display: none;
+  position: absolute;
+  padding: 25px;
+  background-color: #fffdfd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  margin-top: 3px;
+
+
+}
+
+.dropdown-book a {
+  float: none;
+  color: black;
+  margin: 5px;
+  font-weight: 100;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.book-link:hover .dropdown-book {
+  display: block;
+}
+
+.dropdown-book a:hover {
+  color: rgb(45, 102, 249);
+  font-weight: bold;
+}
+
+.Books:hover {
+  border-bottom: 5px solid rgb(235, 113, 0);
+}
+
+.dropdown-study-main {
+  display: none;
+  position: absolute;
+  left: 200px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.dropdown-study-main::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.dropdown-study-main a {
+  float: none;
+  color: black;
+  margin: 5px;
+  font-weight: normal;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.study-link:hover .dropdown-study-main {
+  display: block;
+}
+
+#Study:hover {
+  border-bottom: 5px solid rgb(235, 113, 0);
+}
+
+.dropdown-study-main p:hover {
+  color: rgb(45, 102, 249);
+  font-weight: bold;
+}
+
+.drop-left {
+  float: left;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.drop-left p {
+  margin-bottom: 50px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.drop-right p {
+  margin-bottom: 30px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.drop-right {
+  float: left;
+  border-left: 1px solid rgb(206, 206, 206);
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+.dropdown-career {
+  display: none;
+  position: absolute;
+  padding: 25px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  margin-top: 3px;
+}
+
+.dropdown-career a {
+  float: none;
+  color: black;
+  margin: 5px;
+  font-weight: 100;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.career-link:hover .dropdown-career {
+  display: block;
+}
+
+.dropdown-career a:hover {
+  color: rgb(45, 102, 249);
+  font-weight: bold;
+}
+
+.Career:hover {
+  border-bottom: 5px solid rgb(235, 113, 0);
+}
+
+.mate-drop {
+  display: none;
+  position: absolute;
+  padding: 25px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  margin-top: 3px;
+}
+
+.mate-drop a {
+  float: none;
+  color: black;
+  margin: 5px;
+  font-weight: 100;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.mate-link:hover .mate-drop {
+  display: block;
+}
+
+.mate-drop a:hover {
+  color: rgb(45, 102, 249);
+  font-weight: bold;
+}
+
+#CheggMate:hover {
+  border-bottom: 5px solid rgb(235, 113, 0);
+}
+
+
+.general-link a:hover {
+  border-bottom: 5px solid rgb(235, 113, 0);
+}
+
+
+.input-btn-div {
+  text-align: center;
+  margin: 15px 0 10px 0;
+  width: 33.5rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.input-btn-div input {
+  width: 100%;
+  height: 45px;
+  padding: 1px 2px 1px 16px;
+  border: 1px solid rgb(242, 199, 27);
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+
+
+
+
+.input-btn-div input[type="text"]:focus {
+  outline: none;
+  border: 2px solid rgb(235, 113, 0);
+}
+
+.input-btn-div button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 80px;
+  height: 38px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(235, 113, 0);
+  cursor: pointer;
+}
+
+.input-btn-div button:hover {
+  width: 101px;
+  height: 39px;
+  transition: 0.5s;
+  background-color: rgb(203, 98, 0);
+}
+
+.full-img-text {
+  margin-top: 25px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.full-img-text img {
+  width: 100%;
+
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 120px;
+
+
+}
+
+.text-container p {
+  color: #ffffff;
+}
+
+#first-row {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+#second-row {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 25px;
+}
+
+#third-row {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 16px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.text-container button {
+  width: 145px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(235, 113, 0);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.text-container button:hover {
+  border-color: rgb(228, 88, 0);
+  background-color: rgb(228, 88, 0);
+  color: rgb(255, 255, 255);
+  width: 147px;
+  height: 47px;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.final-week {
+  flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.final-week p {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 24px;
+}
+
+.card {
+  float: left;
+  width: 390px;
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 15px;
+
+}
+
+.card1 {
+  position: relative;
+}
+
+.card1-header {
+  background-color: rgb(235, 113, 0);
+  width: 65%;
+  height: 46px;
+  border-radius: 15px 0 15px 0;
+  padding: 8px 24px;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.card-text {
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+#card-first-text {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+#card-second-text {
+  line-height: 1.2;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.card-text a {
+  text-decoration: none;
+  color: #00799E;
+  font-weight: bold;
+}
+
+.card2 img {
+  width: 100%;
+  height: auto;
+}
+
+.price-container {
+  text-align: center;
+  color: #222;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.price-container p {
+  margin: 18px;
+}
+
+.price-container button {
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(235, 113, 0);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.price-container button:hover {
+  border-color: rgb(228, 88, 0);
+  background-color: rgb(228, 88, 0);
+  color: rgb(255, 255, 255);
+  width: 102px;
+  height: 42px;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.fact-text {
+  margin-top: 40px;
+  padding: 0 24px;
+  text-align: center;
+  color: #EB7100;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.info-container img {
+  width: 40%;
+  height: 100%;
+}
+
+.info-container {
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 24px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.info-text {
+  text-align: left;
+  line-height: 1.2;
+  margin: 0 auto;
+  transform: translateY(30%);
+}
+
+#info-header {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#info-des {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.info-text a {
+  text-decoration: none;
+  color: #00799E;
+  font-weight: bold;
+}
+
+.help {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.two-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.add-skills {
+  width: 600px;
+  height: 550px;
+  position: relative;
+}
+
+.get-guide {
+  width: 600px;
+  height: 550px;
+  position: relative;
+
+}
+
+.add-skills img {
+  width: 100%;
+  height: 100%;
+}
+
+.get-guide img {
+  width: 100%;
+  height: 100%;
+}
+
+.two-container-text-div-skills {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+}
+
+.two-container-text-div-guide {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+}
+
+
+#two-img-header {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#two-img-body {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fffdfd;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.two-container-text-div-skills button {
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(235, 113, 0);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.two-container-text-div-guide button {
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(235, 113, 0);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.two-container-text-div-skills button:hover {
+  background-color: rgb(228, 88, 0);
+  color: rgb(255, 255, 255);
+
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.two-container-text-div-guide button:hover {
+  background-color: rgb(228, 88, 0);
+  color: rgb(255, 255, 255);
+
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+
+.before-footer p {
+  font-size: 11px;
+  font-weight: 200;
+  margin: 26px;
+
+}
+
+
+
+.lists {
+  margin-left: 100px;
+
+}
+
+th {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-right: 100px;
+}
+
+table {
+  align-items: center;
+}
+
+td{
+  font-size: 13px;
+  font-weight: 500;
+}
+tr{
+line-height: 2;}
+td:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(0, 187, 31);
+  font-size: 30px;
+  border: none;
+  position: fixed;
+  border: 1px solid;
+  border-color: #ffffff;
+  bottom: 10px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.Icons-last{
+  background-color: rgb(231, 231, 231);
+}
+
+.apps{
+  
+  padding:50px 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-t-i{
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-icon img{
+  width: 100px;
+  height: 40px;
+}
+
+.Icons-last span{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.Icons-last a{
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.last-links{
+  display: flex;
+  justify-content: space-between;
+  padding: 36px;
+}
+
+#cookees-s{
+  color: #68b631;
+    border: 1px solid #68b631;
+    height: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.8em 2em;
+    font-size: 0.8em;
+    line-height: 1.2;
+    cursor: pointer;
+
+}
+
+#cookees-s:hover{
+  background-color: #68b631;
+  color: white;
+  text-decoration: underline;
+}
